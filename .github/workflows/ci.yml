@@ -7,7 +7,7 @@ on:
 # One run per ref; a new push cancels the previous in-flight run.
 concurrency:
   group: ci-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   lint:
